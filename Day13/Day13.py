@@ -63,3 +63,15 @@ print(str12.isprintable())
 
 str13 = " "  # This will return True or False if the string contains whitespaces
 print(str13.isspace())
+
+str14 = "This is a title" # This will return True or False depending on the words starting with lowercase or uppercase letter in a string
+print(str14.istitle())
+
+str15 = "This is Python" # This will return True or False depending on the input available in the string or not
+print(str15.startswith("This"))
+
+str16 = "Python is a interpreted language" # As per the name suggests this will return the string with character swapped like uppercase will swapped with the lowecase and vice versa
+print(str16.swapcase())
+
+str17 = "My Name is Ashish Sharma. I am a Web Developer" # This will return the same string with all the first char of the string is converted to uppercase
+print(str17.title())
