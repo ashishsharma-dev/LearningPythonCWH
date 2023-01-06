@@ -6,14 +6,16 @@
 # What if the user types a string or another data type 😕 then our code will stop executing further
 # That is the reason we use try and except here for the exception handling
 
-tableOf = int(input("Enter the number: "))
+tableOf = input("Enter the number: ")
 
 print(f"The table of {tableOf} is printed below:")
 
 try:
     for i in range(1, 11):
-        print(f"{tableOf} X {i} = {tableOf*i}")
-except ValueError:
-    raise ValueError("Your custom message here.")
+        print(f"{int(tableOf)} X {i} = {int(tableOf)*i}") # Here we will get a custom error
+        # If We do not get the integer in above from the user then we will get a custom error
+except Exception as e:
+    print("Custom Error Message")
 
 print("Here some lines of important code")
+print("Some other important lines of code")
